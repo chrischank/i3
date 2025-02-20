@@ -130,7 +130,7 @@ bindcode $mod+Shift+Mod2+80 	move container to workspace  $ws8
 bindcode $mod+Shift+Mod2+81 	move container to workspace  $ws9
 bindcode $mod+Shift+Mod2+90 	move container to workspace  $ws10
 
-# move focused container to workspace with numpad keys
+# move focused container to workspace with numpad ker
 bindcode $mod+Shift+87 	 move container to workspace  $ws1
 bindcode $mod+Shift+88 	 move container to workspace  $ws2
 bindcode $mod+Shift+89 	 move container to workspace  $ws3
@@ -153,6 +153,10 @@ bindcode $mod+Shift+90 	 move container to workspace  $ws10
 #        bindsym j resize grow height 10 px or 10 ppt
 #        bindsym k resize shrink height 10 px or 10 ppt
 #        bindsym l resize grow width 10 px or 10 ppt
+bindsym $mod+equal resize grow width 3 px or 3 ppt
+bindsym $mod+minus resize shrink width 3 px or 3 ppt
+bindsym $mod+x gaps inner current plus 3
+bindsym $mod+z gaps inner current minus 3
 
 # same bindings, but for the arrow keys
 #        bindsym Left resize shrink width 10 px or 10 ppt
@@ -161,8 +165,8 @@ bindcode $mod+Shift+90 	 move container to workspace  $ws10
 #        bindsym Right resize grow width 10 px or 10 ppt
 
 # back to normal: Enter or Escape
-#	     bindsym Return mode "default"
-#        bindsym Escape mode "default"
+#         bindcode Return mode "default"
+#         bindcode Escape mode "default"
 #}
 
 #bindsym $mod+r mode "resize"
@@ -172,7 +176,7 @@ bindcode $mod+Shift+90 	 move container to workspace  $ws10
 ######################################
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id kitty
+bindsym $mod+Return exec --no-startup-id ghostty
 
 # kill focused window
 bindsym $mod+q kill
@@ -322,14 +326,14 @@ set $ws10 "10"
 #workspace $ws5 output HDMI-0
 
 # bind program to workspace and focus to them on startup:
-#assign [class="kitty"] $ws1
+#assign [class="ghostty"] $ws1
 #assign [class="(?i)firefox"] $ws2
 #assign [class="Thunar"] $ws3
 #assign [class="thunderbird"] $ws4
 #assign [class="TelegramDesktop"] $ws5
 
 # automatic set focus new window if it opens on another workspace than the current:
-#for_window [class=kitty] focus
+#for_window [class=ghostty] focus
 #for_window [class=(?i)firefox] focus
 #for_window [class=Thunar] focus
 #for_window [class=Thunderbird] focus
