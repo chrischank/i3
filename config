@@ -176,7 +176,7 @@ bindsym $mod+z gaps inner current minus 3
 ######################################
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id ghostty
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+q kill
@@ -186,11 +186,11 @@ bindsym $mod+Shift+e exec --no-startup-id ~/.config/i3/scripts/powermenu
 
 # Lock the system
 # lock with a picture:
-#bindsym $mod+l exec --no-startup-id i3lock -i  ~/.config/i3/i3-lock-screen.png -p default|win -t
+bindsym $mod+Escape exec --no-startup-id i3lock -i  ~/Pictures/Wallpaper/corgi.png -p default|win -t
 # lock by blurring the screen:
-#bindsym $mod+Backspace exec --no-startup-id ~/.config/i3/scripts/blur-lock
+#bindsym $mod+Escape exec --no-startup-id ~/.config/i3/scripts/blur-lock
 # lock in case after sleep
-exec --no-startup-id xss-lock -l ~/.config/i3/scripts/blur-lock
+exec --no-startup-id xss-lock -- i3lock -i ~/Pictures/Wallpaper/corgi.png -t
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -326,14 +326,14 @@ set $ws10 "10"
 #workspace $ws5 output HDMI-0
 
 # bind program to workspace and focus to them on startup:
-#assign [class="ghostty"] $ws1
+#assign [class="alacritty"] $ws1
 #assign [class="(?i)firefox"] $ws2
 #assign [class="Thunar"] $ws3
 #assign [class="thunderbird"] $ws4
 #assign [class="TelegramDesktop"] $ws5
 
 # automatic set focus new window if it opens on another workspace than the current:
-#for_window [class=ghostty] focus
+#for_window [class=alacritty] focus
 #for_window [class=(?i)firefox] focus
 #for_window [class=Thunar] focus
 #for_window [class=Thunderbird] focus
