@@ -179,7 +179,7 @@ bindsym $mod+z gaps inner current minus 3
 bindsym $mod+Return exec --no-startup-id ghostty
 
 # start file navigator
-bindsym $mod+n exec thunar
+bindsym $mod+n exec --no-startup-id ghostty -e yazi
 
 # kill focused window
 bindsym $mod+q kill
