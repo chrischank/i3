@@ -176,7 +176,10 @@ bindsym $mod+z gaps inner current minus 3
 ######################################
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id ghostty
+
+# start file navigator
+bindsym $mod+n exec thunar
 
 # kill focused window
 bindsym $mod+q kill
