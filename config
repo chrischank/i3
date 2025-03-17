@@ -253,10 +253,10 @@ bindsym $mod+g layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+t floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+t focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -584,7 +584,7 @@ strip_workspace_numbers yes
 
 ## rofi bindings fancy application menu ($mod+d /F9 optional disabled)
 
-bindsym $mod+d exec --no-startup-id rofi -modi drun -show drun \
+bindsym $mod+space exec --no-startup-id rofi -modi drun -show drun \
 		-config ~/.config/rofi/rofidmenu.rasi
 
 #bindsym F9 exec --no-startup-id rofi -modi drun -show drun \
